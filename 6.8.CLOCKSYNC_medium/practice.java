@@ -44,13 +44,29 @@ public class practice {
                 int containerItem = Integer.parseInt(containerRowItems[j]);
                 clock[j] = containerItem;
             }
-            bufferedWriter.write("str");
+
+            // 지금 생각하는 거는
+            // 입력값 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 이 정답? 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 이 정답? 다 한다음
+            // 정답이면 기존의 정답과 총 값 비교해서 최소 출력하게.
+            // 즉 완전탐색 방법을 생각중..
+
+            int result = calculate_start(clock);
+
+
+            bufferedWriter.write(result);
             bufferedWriter.newLine();
         }
-
 
         bufferedWriter.close();
 
         scanner.close();
     }
+
+    static int calculate_start(int[] clock){
+
+
+        return 0;
+    }
+
+
 }
